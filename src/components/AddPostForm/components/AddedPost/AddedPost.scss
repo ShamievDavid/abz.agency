@@ -2,13 +2,27 @@
 
 .added-post {
   position: absolute;
+  box-sizing: border-box;
   background-color: #f8fae5;
-  width: 200px;
+  max-width: 200px;
   height: 200px;
   top: calc(50% - 100px);
   left: calc(50% - 100px);
+  padding: 10px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
+
+  &__id {
+    margin-bottom: 5px;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+  }
+
+  &__body {
+    max-width: 180px;
+    overflow: hidden;
+  }
 }

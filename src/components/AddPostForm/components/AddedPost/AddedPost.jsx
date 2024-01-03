@@ -5,9 +5,9 @@ export const AddedPost = ({ addedPostData }) => {
   const { title, body, id } = addedPostData;
   return (
     <div className="added-post">
-      <div>id: {id}</div>
-      <div>title: {title}</div>
-      <div>body: {body}</div>
+      <div className="added-post__id">id: {id}</div>
+      <div className="added-post__title">title: {title}</div>
+      <div className="added-post__body">body: {body}</div>
     </div>
   );
 };
