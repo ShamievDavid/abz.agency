@@ -1,0 +1,31 @@
+@import '/src/style/main.scss';
+
+.add-post-button {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(127, 255, 212, 0.343);
+
+  &__text {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    animation: bounce 1s infinite alternate;
+  }
+
+  @keyframes bounce {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-10px);
+    }
+  }
+}

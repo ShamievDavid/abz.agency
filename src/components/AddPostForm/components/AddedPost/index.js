@@ -1,0 +1,1 @@
+export { AddedPost } from './AddedPost';

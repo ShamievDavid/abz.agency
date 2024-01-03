@@ -1,0 +1,55 @@
+@import '/src/style/main.scss';
+
+.add-post-form {
+  position: absolute;
+  top: calc(50% - 200px);
+  left: calc(50% - 200px);
+  width: 400px;
+  height: 400px;
+  background-color: #aad9bb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 24px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__textfield {
+    display: block;
+    width: $text-filed-width;
+    height: 50px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    font-family: 'Arial';
+  }
+
+  &__submit {
+    display: block;
+    border: none;
+    background-color: #80bcbd;
+    width: $text-filed-width;
+    height: 50px;
+    color: white;
+    font-size: 24px;
+    transition: 0.5s ease;
+    margin-bottom: 10px;
+
+    &:hover {
+      background-color: #f9f7c9;
+      color: black;
+      transition: 0.5s ease;
+    }
+  }
+}

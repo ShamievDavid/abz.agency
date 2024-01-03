@@ -1,0 +1,14 @@
+@import '/src/style/main.scss';
+
+.added-post {
+  position: absolute;
+  background-color: #f8fae5;
+  width: 200px;
+  height: 200px;
+  top: calc(50% - 100px);
+  left: calc(50% - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
