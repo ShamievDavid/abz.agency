@@ -3,13 +3,15 @@ import './App.scss';
 import { ThreeBlocks, Loader, AddPostButton, AddPostForm } from 'components';
 import { useFetch } from 'hooks';
 
+const POST_ENDPOINT = 'https://jsonplaceholder.typicode.com/posts';
+
 function App() {
   const { loadData, data, loading, error } = useFetch();
   const [addPost, setAddPost] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
-      await loadData('https://jsonplaceholder.typicode.com/posts');
+      await loadData(POST_ENDPOINT);
     };
 
     fetchData();
