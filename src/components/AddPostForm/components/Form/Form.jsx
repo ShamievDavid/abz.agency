@@ -44,6 +44,7 @@ export const Form = ({ setIsLoading, setShowAddedData, setAddedPostData }) => {
       [name]: value,
     });
   };
+
   return (
     <form onSubmit={handlePost}>
       <input
